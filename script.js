@@ -3,7 +3,7 @@ let hasMouseMoved = false;
 
 // Initialize the hover sound using Howler.js
 const hoverSound = new Howl({
-    src: ['sounds/hover-sound.wav'], // Path to your hover sound file
+    src: ['sounds/hover-sound.mp3'], // Path to your hover sound file
     preload: true,                   // Preload for instant playback
     volume: 0.3                      // Set volume (adjust as needed)
 });
@@ -40,7 +40,7 @@ document.addEventListener('mousemove', handleMouseMove);
 
 // Initialize the womp sound using Howler.js
 const wompSound = new Howl({
-    src: ['sounds/womp.wav'], // Path to your womp sound file
+    src: ['sounds/womp.mp3'], // Path to your womp sound file
     preload: true,            // Preload for instant playback
     volume: 0.5               // Set volume (adjust as needed)
 });
