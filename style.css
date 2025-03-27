@@ -1,8 +1,8 @@
 /* General Styles */
 body {
-    background-color: #013220;
+    background-color: #000000;
     color: #FFFFFF;
-    font-family: 'EB Garamond', serif;
+    font-family: 'Ariel', sans-serif;
     font-size: 18px;
     margin: 0;
     padding: 0;
@@ -13,7 +13,7 @@ body {
 
 /* Header and Navigation */
 header {
-    background-color: #014421;
+    background-color: #FFFFFF;
     padding: 10px 20px;
     display: flex;
     align-items: center;
@@ -27,6 +27,7 @@ header h1 {
     font-weight: normal;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    color: #000000;
 }
 
 nav ul {
@@ -41,7 +42,7 @@ nav li {
 }
 
 nav a {
-    color: #66B2FF;
+    color: #000000;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
 }
@@ -61,6 +62,7 @@ main {
     margin: 20px auto;
     padding: 0 20px;
     box-sizing: border-box;
+    
 }
 
 main h2, main h3 {
@@ -70,12 +72,12 @@ main h2, main h3 {
 }
 
 main a {
-    color: #66B2FF;
-    text-decoration: none;
+    color: #FFFFFF;
+    text-decoration: underline;
 }
 
 main a:hover {
-    text-decoration: underline;
+    color: #CCCCCC;
 }
 
 p, li {
@@ -110,31 +112,30 @@ p, li {
     }
 }
 
-/* Keyframes for rainbow color animation */
 @keyframes rainbow {
     0% {
-        color: red;
+        color: #FFB3BA;  /* Pastel Pink */
     }
     14% {
-        color: orange;
+        color: #FFDFBA;  /* Pastel Orange */
     }
     28% {
-        color: yellow;
+        color: #FFFFBA;  /* Pastel Yellow */
     }
     42% {
-        color: green;
+        color: #BAFFC9;  /* Pastel Green */
     }
     57% {
-        color: blue;
+        color: #BAE1FF;  /* Pastel Blue */
     }
     71% {
-        color: indigo;
+        color: #E1CCFF;  /* Pastel Indigo */
     }
     85% {
-        color: violet;
+        color: #F5BAFF;  /* Pastel Violet */
     }
     100% {
-        color: red;
+        color: #FFB3BA;  /* Back to Pastel Pink */
     }
 }
 
@@ -160,12 +161,11 @@ p, li {
 .wave-text span:nth-child(19) { animation-delay: 1.8s; }
 
 .profile-image {
-    border: 1px outset black;
+    border: 1px solid #FFFFFF;
     border-radius: 50%;
     object-fit: cover;
     object-position: center;
 }
-
 
 /* Row Styles */
 .row {
@@ -181,9 +181,11 @@ p, li {
     flex: 0 0 calc(33.333% - 20px);
     max-width: calc(33.333% - 20px);
     box-sizing: border-box;
-    padding: 10px;
+    padding: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin-bottom: 20px;
-    background-color: #1E4D2B;
+    background-color: #111111;
     border-radius: 10px;
 }
 
@@ -234,14 +236,15 @@ p, li {
 
 /* Game Item Styles */
 .game-item {
-    background-color: #1E4D2B;
+    background-color: #111111;
     padding: 15px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #FFFFFF;
 }
 
 .game-thumbnail {
@@ -258,26 +261,26 @@ p, li {
 }
 
 .game-item p {
-    color: #E0FFE0;
+    color: #CCCCCC;
     margin-bottom: 10px;
     text-align: left;
 }
 
 .game-item a {
-    color: #66B2FF;
-    text-decoration: none;
+    color: #FFFFFF;
+    text-decoration: underline;
     font-weight: bold;
 }
 
 .game-item a:hover {
-    text-decoration: underline;
+    color: #CCCCCC;
 }
 
 .game-item:hover {
-    background-color: #2A5D3F;
+    background-color: #222222;
     transform: translateY(-5px);
     transition: all 0.3s ease;
-    box-shadow: 0 4px 8px, rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
 }
 
 /* Responsive Adjustments */
